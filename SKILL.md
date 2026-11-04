@@ -36,11 +36,12 @@ The workflow runs in eight phases, 0 through 7.
 
 ## Phase 2: Decision gate
 
-1. Batch open decisions as 2-3 options each plus one clear recommendation. Decision-makers close fast in this format.
-2. If the decision-maker prefers, ask one question at a time, then recap all answers into a decisions file before building.
-3. Never put words in the decision-maker's mouth. A belief, doubt, or position appears in their voice only if they said it. Show the wording first.
-4. When the decision-maker says "just build it", build it. That covers execution within the agreed scope; a structural change beyond that scope still gets review first. Report caveats; do not reopen settled choices.
-5. Get review before structural changes. Narrow copy fixes execute directly only when that specific change was authorized. There is no blanket permission to edit.
+1. Ask only about choices the brief leaves unresolved. Never re-ask what the brief or an earlier recorded answer already settles; re-asking settled questions wastes the decision-maker's time.
+2. Batch open decisions as 2-3 options each plus one clear recommendation, and ask before the build starts, not after a draft exists. Decision-makers close fast in this format.
+3. If the decision-maker prefers, ask one question at a time, then recap all answers into a decisions file before building.
+4. Never put words in the decision-maker's mouth. A belief, doubt, or position appears in their voice only if they said it. Show the wording first.
+5. When the decision-maker says "just build it", build it. That covers execution within the agreed scope; a structural change beyond that scope still gets review first. Report caveats; do not reopen settled choices.
+6. Get review before structural changes. Narrow copy fixes execute directly only when that specific change was authorized. There is no blanket permission to edit.
 
 ## Phase 3: Content checkpoint
 
@@ -94,6 +95,7 @@ The workflow runs in eight phases, 0 through 7.
 - QA reported on files that changed after the check.
 - Design work overwriting uncheckpointed approved content.
 - Reopening settled decisions with new style questions.
+- Asking about choices the brief already settles, or asking open questions without a recommendation.
 - Citing a process or checklist without actually running it end to end.
 
 See reference/checklists.md for the decision-question format, the pre-delivery QC checklist, and the lessons-file template.
