@@ -4,7 +4,7 @@ Companion reference for the brief-to-delivery skill.
 
 ## Decision-question format
 
-One question per batch item:
+Ask only what the brief leaves unresolved. Skip anything the brief or a recorded answer already settles. One question per batch item:
 
 ```
 Decision N: [short name]
