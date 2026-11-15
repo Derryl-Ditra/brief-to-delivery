@@ -1,54 +1,73 @@
 # Brief to Delivery
 
-An experimental, human-reviewed workflow for building landing pages (a homepage plus campaign pages) and other brief-based deliverables, with scope gates, independent critique and final checks.
+An experimental workflow for turning a brief into a landing page or another reviewed deliverable. It separates scope, decisions, content, critique and final checks.
 
-It separates scope, open decisions, content checkpoints, critique and final checks. It is a set of instructions and a checklist, not an autonomous delivery service.
+This is an instruction package, not a runnable website template. It bundles no app, renderer, model, independent reviewer or publishing service. You need an agent host that reads skills; terminal examples below also require Git. No API keys or runtime dependencies are bundled.
 
 ## Status: experimental beta
 
-This is **not a production-grade reliability guarantee**. In the latest two user-run Claude scenarios, supplied quantities and missing-price safeguards held. One proposal still added an acceptance/signature mechanism that the brief did not supply. Another assumed an unspecified supplier role. These failures remain unresolved in the package here.
+Human review is required before external release. This package does not guarantee source fidelity, legal suitability, conversion gains or reliable model behavior.
 
-Only two different scenarios were completed once each. Repeat consistency, broad model compatibility and reliable improvement over a baseline have not been established. Keep human review before external release.
+Historical reports describe two single run proposal scenarios with mixed results. They do not prove the current landing page workflow works. See [trial records](reference/trials.md) for the limits and dated compatibility table. A model saying it checked something is not proof.
 
-## Files
+## Quickstart
 
-- `SKILL.md`: the workflow, phases 0 through 7.
-- `reference/checklists.md`: decision format, final-check checklist and a scope-boundary example.
+Choose one host. These paths follow official documentation read on 15 November 2026; they are not runtime compatibility certifications. Commands below create a new folder and do not update an existing installation. Stop and inspect an existing copy rather than overwriting it.
 
-No scripts, API keys, dependencies or external services are bundled.
+### Claude Code, local terminal
 
-## Use it
+```sh
+mkdir -p ~/.claude/skills
+git clone https://github.com/Derryl-Ditra/brief-to-delivery.git ~/.claude/skills/brief-to-delivery
+```
 
-1. Put this folder into the skill location supported by your agent, or ZIP the folder and import it using the platform's custom-skill interface.
-2. For Claude's web app, follow the [official custom-skill instructions](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills). Feature availability depends on your account and settings.
-3. For coding agents that read skill files (for example Claude Code), place this folder in the skills directory your tool reads and name the skill in your prompt. Check your tool's current documentation; skill locations and conventions change.
-4. Provide the original brief, constraints and source material. Ask for a private candidate and name what may not be sent, published or changed.
-5. Review assumptions and consequential missing facts before external delivery. Do not treat a `TBD` label as approval to publish.
-6. Ask the agent to state which checks actually ran. Rendering, source access and independent review need real capabilities in the environment; otherwise they must be reported as `NOT RUN`.
+Start Claude Code in your working project. Enter `/brief-to-delivery` with your brief, or explicitly ask it to use `brief-to-delivery`. If the command is absent, restart the session and inspect the installed `SKILL.md`; do not assume activation. Local personal skills are not the same as account skills for cloud sessions.
 
-Example request:
+### Antigravity IDE
 
-> Use brief-to-delivery. Draft a private candidate proposal for four newsletter drafts in two weeks, one revision per draft. No price has been supplied. Do not invent one, send anything or publish. Identify what can be drafted now and what prevents external release.
+```sh
+mkdir -p ~/.gemini/config/skills
+git clone https://github.com/Derryl-Ditra/brief-to-delivery.git ~/.gemini/config/skills/brief-to-delivery
+```
 
-This is a usage example, not a claim that every run will obey it.
+Confirm the skill is listed in the host's skills or customization view. In a new conversation, ask it to use `brief-to-delivery` and read `SKILL.md` plus its companion references. If it is not listed, check the host documentation and location before continuing. The documented legacy global path is `~/.gemini/antigravity/skills/brief-to-delivery`; choose one location, not both.
 
-## What it does not do
+### Claude web app
 
-- Guarantee source fidelity, correct commercial terms or legal suitability.
-- Supply a renderer, independent reviewer, source integrations or a publishing service.
-- Replace the user's approval, an agent's own permission controls, or artifact inspection.
-- Prove that Claude, Gemini or another model is better than another.
+Follow the [official custom skill guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) to upload a ZIP containing the skill folder and enable it. Feature availability depends on account and settings. The folder must contain `SKILL.md`, `reference/` and `examples/`; confirm the uploaded skill appears before using it. Actual upload and activation have not been verified here.
 
-The workflow asks for a separate critique and visual QA. A model claiming those happened is not evidence that they ran.
+### First request
 
-## Version and provenance
+Use the complete [fictional landing page brief](examples/landing-page.md). It includes an example first response, not a claimed model output.
 
-The workflow files are the v2 scope package dated 3 November 2026, plus a visual-build section for landing pages and page families added in November 2026. The v2 scope rules were exercised in the two test reviews above; the visual-build section is distilled from a real shipped project and has not been through scripted model tests. README and repository packaging are separate additions. No raw conversations, private briefs or account material are included.
+> Use brief-to-delivery. Read examples/landing-page.md and reference/checklists.md. Build the private fictional demo described in the brief. First report inputs read, scope, settled choices, blockers, available capabilities and checks you cannot run. No external publishing, messages, payments or data collection. Do not claim installed, tested or ready from reading files alone.
 
-## Contributing
+For your own project, replace the fictional brief with your original source material and constraints. Review consequential missing facts before build or release. `TBD` is not approval to publish.
 
-Bug reports, clearer documentation and narrow fixes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the fork-and-pull-request process and safe example requirements. Maintainer review is required before merge.
+## Included files
 
-## Usage rights
+1. [SKILL.md](SKILL.md): preflight and phases 0 through 7.
+2. [reference/checklists.md](reference/checklists.md): decisions, QC record and lessons template.
+3. [examples/landing-page.md](examples/landing-page.md): fictional brief and example first response.
+4. [reference/trials.md](reference/trials.md): repeatable cases and dated evidence limits.
 
-Licensed under the [MIT License](LICENSE). You may use, modify and redistribute it, including commercially, while preserving the copyright and license notice. It is provided without warranty.
+## Status language
+
+DRAFT means required checks remain. CHECKED means named checks passed for the identified candidate and no required check is missing; it is not release permission. RELEASED means authorized delivery happened and the delivered version was inspected. Always list what ran and what did not. A missing required check blocks CHECKED status, not independent draft work.
+
+## Documentation sources
+
+Read on 15 November 2026, not a claim of actual host testing:
+
+1. [Claude Code skills](https://code.claude.com/docs/en/skills): personal folder and invocation.
+2. [Antigravity skills](https://antigravity.google/docs/skills): IDE locations and Customizations.
+3. [Claude custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills): upload guidance and 200 character description limit.
+4. [Agent Skills specification](https://agentskills.io/specification): metadata and 1024 character description limit.
+
+The description is kept below 200 characters to fit both published limits. That is a packaging choice, not proof of acceptance by a host.
+
+## Provenance and contributing
+
+The scope workflow began as the v2 package dated 3 November 2026. A visual workflow was added in November 2026. This revision adds setup guidance, a fictional starter, capability reporting and narrower wording. It includes no raw private briefs, conversations or account material.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for safe examples and the contribution process. Maintainer review is required before merge. Licensed under [MIT](LICENSE), without warranty.
