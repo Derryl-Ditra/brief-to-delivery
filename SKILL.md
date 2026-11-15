@@ -16,7 +16,7 @@ Before building, read reference/checklists.md and report:
 1. Inputs actually read, skill version or commit, explicit asks, settled decisions and unresolved blockers. A downloaded file is not proof the host activated the skill.
 2. Capabilities available now: source access, file creation, rendering, browser interaction, independent reviewer, performance measurement and permitted release route. State unavailable checks as NOT RUN with a reason. Never simulate an independent reviewer by reviewing your own work.
 3. Scope and release boundary. Missing tools do not authorize a different audience, service, paid dependency or deployment. Continue unblocked draft work; hold affected claims or release.
-4. Candidate status: DRAFT until required checks pass; CHECKED only for an identified saved candidate with listed evidence and no required checks missing; RELEASED only after authorized delivery and inspection of the actual delivered version. CHECKED is not permission to release. A changed candidate reopens affected checks; release status alone never certifies quality.
+4. Candidate status: DRAFT until required checks pass; SELF-CHECKED when every required check that the builder can run has passed but no independent reviewer was available (independent review NOT RUN; this is the honest ceiling without a reviewer); CHECKED only for an identified saved candidate with listed evidence, an independent reviewer's findings and no required checks missing; RELEASED only after authorized delivery and inspection of the actual delivered version. SELF-CHECKED and CHECKED are not permission to release. A changed candidate reopens affected checks; release status alone never certifies quality.
 
 Use examples/landing-page.md for a fictional starter brief and expected first response. Use reference/trials.md for repeatable cases, evidence limits and dated compatibility records.
 
@@ -53,7 +53,8 @@ Use examples/landing-page.md for a fictional starter brief and expected first re
 3. If the decision-maker prefers, ask one question at a time, then recap all answers into a decisions file before building.
 4. Never put words in the decision-maker's mouth. A belief, doubt, or position appears in their voice only if they said it. Show the wording first.
 5. When the decision-maker says "just build it", build it. That covers execution within the agreed scope; a structural change beyond that scope still gets review first. Report caveats; do not reopen settled choices.
-6. Get review before structural changes. Narrow copy fixes execute directly only when that specific change was authorized. There is no blanket permission to edit.
+6. When no decision-maker can answer, list each open choice as a labeled assumption, build the draft on the stated assumptions, hold any consequential fact and any release, and report the assumptions first. Silence is not approval.
+7. Get review before structural changes. Narrow copy fixes execute directly only when that specific change was authorized. There is no blanket permission to edit.
 
 ## Phase 3: Content checkpoint
 
@@ -66,7 +67,7 @@ Use examples/landing-page.md for a fictional starter brief and expected first re
 1. Lead with the decision: the choice, the argument, why it stays within the brief, then the plan.
 2. Thirty-second rule: one clear goal per slide, screen, or section. If it cannot be understood in 30 seconds, cut it down.
 3. Hierarchy first: a visible focal point, summary stats before detail, records as a second layer. No flat wall of equal-weight information.
-4. Wireframe in black and white until the hierarchy works, unless the brief says otherwise. Color and branding come last, accents stay small on a neutral base.
+4. Wireframe in black and white until the hierarchy works, unless the brief says otherwise. Skip this for a single page whose layout the brief fixes or already supplies, and record N/A with that reason. Color and branding come last, accents stay small on a neutral base.
 5. Plain language for the real audience. Cut jargon and clever phrasing. Be clear, not smart.
 6. Keep transformations believable: adjacent steps, not leaps the audience will not buy.
 7. Strip internal and draft-sounding copy before delivery. Keep the honesty, drop the process commentary.
@@ -84,10 +85,11 @@ These rules apply when the deliverable is a screen: a landing page, a homepage w
 5. Reuse the product's existing elements. Do not invent a second visual language for a share card, a preview, or a new page inside the same product.
 6. Test representative content: the longest expected name, minimum and maximum item counts, applicable loading, empty, denied and error states, and tap targets large enough for phone use. For fictional demos, label invented content and generated assets; never present them as real customer proof or product photography.
 7. Functional parity across breakpoints: preserve the same essential information, actions and outcomes unless the brief says otherwise. Layout, navigation pattern and placement may differ. Record any intentional omission and its approved reason.
-8. Speed is part of the deliverable. Report First Contentful Paint (FCP) and a defined readiness milestone, such as hero visible plus primary control usable. Name the tested URL or candidate, browser, viewport, cache state, network and CPU settings, sample count and result range. Define the milestone before measuring. If instrumentation is unavailable, mark timing NOT RUN. Never claim "fast" without measurement or present simulation as real device evidence.
+8. Speed is part of the deliverable. Report First Contentful Paint (FCP) and a defined readiness milestone, such as hero visible plus primary control usable. Name the tested URL or candidate, browser, viewport, cache state, network and CPU settings, sample count and result range. Define the milestone before measuring. For a local file or private demo with no network, report only local numbers labeled "local, unthrottled, not device evidence", or mark timing NOT RUN. If instrumentation is unavailable, mark timing NOT RUN. Never claim "fast" without measurement or present simulation as real device evidence.
 9. For authorized share surfaces, design and inspect the link preview card and share text on each configured target channel, including applicable in app browsers. Check necessary fallbacks such as copy link or open in a full browser. Record N/A with the scope reason for a private local demo with no sharing; do not publish just to run this check.
-10. When the decision-maker rejects a visual direction, extract the rule from the rejection and record it, so the next round starts from the learned constraint instead of repeating the guess.
-11. Multi-page builds share one design system. A homepage plus several landing pages for ads or different traffic reuse the same header, footer, components, and styles; only the message changes per audience. Inspect every page, not just the homepage. Give each page its own share preview only when sharing is authorized and part of scope; record N/A for a private local demo with no sharing.
+10. Generated assets: use one shared style description for every generated image so the set looks like one brand, and keep the prompts with the project. Label generated images as such unless real photography is supplied. Do not depict a real person or copy a real brand. Give each informative image alt text, and compress images to web size before delivery.
+11. When the decision-maker rejects a visual direction, extract the rule from the rejection and record it, so the next round starts from the learned constraint instead of repeating the guess.
+12. Multi-page builds share one design system. A homepage plus several landing pages for ads or different traffic reuse the same header, footer, components, and styles; only the message changes per audience. Inspect every page, not just the homepage. Give each page its own share preview only when sharing is authorized and part of scope; record N/A for a private local demo with no sharing.
 
 ## Phase 5: Independent critique
 
@@ -99,7 +101,7 @@ These rules apply when the deliverable is a screen: a landing page, a homepage w
 
 1. Check the final saved artifact, not an earlier state. QA reported on stale output is worse than no QA.
 2. Enumerate, do not spot-check. List every visible string, slide, or screen and read each one semantically. A TODO search misses draft tone.
-3. Look at pixels, not just markup. Render and inspect at every target size for overflow, overlap, clipping, and orphaned text. For web builds with authorized share surfaces and configured target channels, also inspect the link preview and applicable in app browsers. Record these channel checks as N/A with the scope reason for a private local demo with no sharing; do not add a release to make them possible.
+3. Look at pixels, not just markup. Render and inspect at 320, 390, 768 and 1440 CSS pixels (or the sizes the brief names) for overflow, overlap, clipping, and orphaned text. For web builds with authorized share surfaces and configured target channels, also inspect the link preview and applicable in app browsers. Record these channel checks as N/A with the scope reason for a private local demo with no sharing; do not add a release to make them possible.
 4. Run one dedicated pass for mechanical defects: page numbers, repeated headers and footers, cross-references, and links after any renumbering.
 5. Technical QA is not editorial readiness. A build that passes every test can still read like internal notes. These are two separate passes.
 6. If the deliverable is published, verify the live bytes from the public URL against the intended build.
