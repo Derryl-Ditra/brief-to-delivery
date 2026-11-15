@@ -53,7 +53,7 @@ For your own project, replace the fictional brief with your original source mate
 
 ## Status language
 
-DRAFT means required checks remain. CHECKED means named checks passed for the identified candidate and no required check is missing; it is not release permission. RELEASED means authorized delivery happened and the delivered version was inspected. Always list what ran and what did not. A missing required check blocks CHECKED status, not independent draft work.
+DRAFT means required checks remain. SELF-CHECKED means every check the builder could run passed but no independent reviewer was available. CHECKED means named checks passed, including independent review, for the identified candidate and no required check is missing; it is not release permission. RELEASED means authorized delivery happened and the delivered version was inspected. Always list what ran and what did not. A missing required check blocks CHECKED status, not independent draft work.
 
 ## Documentation sources
 
