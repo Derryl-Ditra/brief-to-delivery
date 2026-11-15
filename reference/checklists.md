@@ -9,9 +9,9 @@ Ask only what the brief leaves unresolved. Skip anything the brief or a recorded
 ```
 Decision N: [short name]
 Options:
-A. [option] - [one-line tradeoff]
-B. [option] - [one-line tradeoff]
-C. [option] - [one-line tradeoff] (optional)
+A. [option]: [one-line tradeoff]
+B. [option]: [one-line tradeoff]
+C. [option]: [one-line tradeoff] (optional)
 Recommendation: [letter] because [one sentence].
 ```
 
@@ -35,6 +35,28 @@ Run on the final saved artifact, in this order. Record what was inspected.
 ## Scope boundary example
 
 Source: four drafts in two weeks, one revision per draft. Supported: four drafts, two-week delivery, one revision each. Unsupported: feedback must be consolidated; work proceeds one draft at a time; the window begins at kickoff; these conditions are approved. Put any needed new term in a separate proposal for approval, not the client-facing draft.
+
+## Candidate QC record
+
+Fill this before claiming CHECKED. A blank template is not evidence.
+
+```text
+Brief and approved decisions:
+Skill version or commit:
+Saved candidate checksum or revision:
+Status: DRAFT / CHECKED / RELEASED
+Required capabilities and unavailable checks:
+Requirement | Observable pass condition | Actual evidence | PASS / FAIL / NOT RUN / N/A
+Target sizes, interactions and applicable states inspected:
+Timing: FCP, defined readiness milestone, browser, viewport, cache,
+network and CPU settings, samples and range; or NOT RUN with reason:
+Independent reviewer, findings, fixes and corrected candidate recheck:
+Open failures and limits:
+Release authority, destination and audience:
+Delivered version inspection, if authorized and released:
+```
+
+N/A needs a scope reason. Missing a required check keeps status DRAFT. Self review is not independent critique. An edit reopens affected checks. RELEASED records delivery, not a blanket quality certificate.
 
 ## Lessons-file template
 
