@@ -24,7 +24,7 @@ Run on the final saved artifact, in this order. Record what was inspected.
 1. Freshness: the artifact checked is the one that will be delivered (final saved file, or live deployed bytes if published).
 2. Source check: every figure and named fact traces to a source, or carries a visible TBD / UNVERIFIED tag. A consequential unknown still blocks external delivery (Phase 1, rule 4).
 3. Enumeration: every visible string, slide, or screen listed and read. No spot-checking.
-4. Visual check: rendered and inspected at every target size (for screens: wide desktop, laptop, tablet, phone). Look for overflow, overlap, clipping, orphaned text.
+4. Visual check: rendered and inspected at every target size (for screens: 320, 390, 768 and 1440 CSS pixels unless the brief names others). Look for overflow, overlap, clipping, orphaned text.
 5. Mechanical pass: page or slide numbers unique and sequential, headers and footers not duplicated, no duplicated or repeated slides or sections, cross-references and links still correct after any renumbering.
 6. Editorial pass: no internal notes, draft commentary, placeholder tone, or process narration. Honest labels stay; commentary goes.
 7. Content-rules pass: the deliverable leads with the decision (the choice, the argument, why it fits the brief, then the plan); it does not recap the brief to its author; each slide, screen, or section has one clear goal.
@@ -38,13 +38,13 @@ Source: four drafts in two weeks, one revision per draft. Supported: four drafts
 
 ## Candidate QC record
 
-Fill this before claiming CHECKED. A blank template is not evidence.
+Fill this before claiming SELF-CHECKED or CHECKED. A blank template is not evidence.
 
 ```text
 Brief and approved decisions:
 Skill version or commit:
 Saved candidate checksum or revision:
-Status: DRAFT / CHECKED / RELEASED
+Status: DRAFT / SELF-CHECKED / CHECKED / RELEASED
 Required capabilities and unavailable checks:
 Requirement | Observable pass condition | Actual evidence | PASS / FAIL / NOT RUN / N/A
 Target sizes, interactions and applicable states inspected:
@@ -56,7 +56,7 @@ Release authority, destination and audience:
 Delivered version inspection, if authorized and released:
 ```
 
-N/A needs a scope reason. Missing a required check keeps status DRAFT. Self review is not independent critique. An edit reopens affected checks. RELEASED records delivery, not a blanket quality certificate.
+N/A needs a scope reason. Missing a required check the builder can run keeps status DRAFT. Self review is not independent critique: without an independent reviewer the highest status is SELF-CHECKED. An edit reopens affected checks. RELEASED records delivery, not a blanket quality certificate.
 
 ## Lessons-file template
 
