@@ -1,11 +1,11 @@
 ---
 name: brief-to-delivery
-description: Turn briefs into verified decks, documents, prototypes, or proposals. Use for deadline-driven work needing scope control, human approval, independent critique, and final checks.
+description: Interactive landing page builder workflow. Turn a brief into a verified landing page, homepage plus campaign pages, deck, document, prototype, or proposal, with scope control, human approval, independent critique, and final checks. Built for pages that get visits but no signups.
 ---
 
 # Brief to Delivery
 
-A workflow for deliverable projects where quality failures cost trust: a deck for a review panel, a client proposal, a prototype, a report. Distilled from a long deliverable project, including the mistakes made along the way and the rules that fixed them.
+A workflow for deliverable projects where quality failures cost trust: a landing page, a homepage plus campaign pages for different traffic, a deck for a review panel, a client proposal, a prototype, a report. Its core use is building landing pages interactively with a steering decision-maker, for the familiar case where the page loads fine, looks fine, and still converts nobody. Distilled from real deliverable projects, including the mistakes made along the way and the rules that fixed them.
 
 The workflow runs in eight phases, 0 through 7.
 
@@ -13,7 +13,8 @@ The workflow runs in eight phases, 0 through 7.
 
 - The input is an open-ended brief, RFP, test assignment, or stakeholder request with explicit and implicit asks.
 - A human decision-maker reviews drafts and approves the final output.
-- Small visible defects (a duplicate page number, an unsourced figure) damage trust in the whole deliverable.
+- Small visible defects (a duplicate page number, an unsourced figure, a broken mobile layout) damage trust in the whole deliverable.
+- For a landing page: the visual and interaction quality decides whether anyone uses it, and the builder cannot see the result the way a first-time visitor does.
 - There is a real deadline and the best verified state at the deadline beats a perfect state after it.
 
 ## Phase 0: Extract the brief
@@ -61,6 +62,22 @@ The workflow runs in eight phases, 0 through 7.
 8. Frame the reusable method (templates, rules, measurement tools) separately from case-specific content, so the work transfers.
 9. When the decision-maker hands you a method, reference, or example to follow, apply it and state which parts you used and which you did not - before being asked. Reading or citing a method is not applying it.
 
+### Visual builds: landing pages and page families
+
+These rules apply when the deliverable is a screen: a landing page, a homepage with campaign pages for ads or different traffic, a dashboard, a map, a small tool. They come from a real project where the decision-maker rejected round after round of visual work; each rule is a rejection that became a fix.
+
+1. Functional over decorative. Every element does a job. A beautiful screen that is hard to use fails, and passing a pixel checklist does not mean the screen passes the decision-maker's taste.
+2. Mobile is its own design, not a shrunken desktop. Navigation, sheets, gestures, and reach zones need phone-native patterns. If the mobile layout is a desktop port, redo it.
+3. One dominant primary action per screen. No flat row of equal-weight buttons; the main action (book, buy, share, directions) is visibly the biggest and stays reachable, for example in a sticky bar.
+4. Icons must match their meaning. A wrong icon is a defect, not a style choice. For third-party links use the current official brand marks in brand colors, icon-only when the meaning is obvious; drop redundant text labels.
+5. Reuse the product's existing elements. Do not invent a second visual language for a share card, a preview, or a new page inside the same product.
+6. Test with real content, not placeholders: the longest real name, the minimum and maximum item counts, empty, denied, and error states, and tap targets large enough to avoid misclicks on a phone.
+7. Parity across breakpoints: what mobile has, desktop has, and the reverse, unless the brief says otherwise.
+8. Speed is part of the deliverable. Measure first content and full readiness under throttled mobile and report the measured numbers. Never claim "fast" without a measurement, and never present a simulator number as a real-device number.
+9. Share and preview surfaces are screens too. The shared-link preview card and the share text are designed, written, and inspected on each target channel, including in-app browsers that strip native features (no share sheet, blocked location). Provide fallbacks: copy link, open in a full browser.
+10. When the decision-maker rejects a visual direction, extract the rule from the rejection and record it, so the next round starts from the learned constraint instead of repeating the guess.
+11. Multi-page builds share one design system. A homepage plus several landing pages for ads or different traffic reuse the same header, footer, components, and styles; only the message changes per audience. Inspect every page, not just the homepage, and give each page its own share preview.
+
 ## Phase 5: Independent critique
 
 1. Before the decision-maker reviews, run a fresh-eyes attack pass with a separate reviewer, agent, or session. Feed the reviewer the original brief and the decision-maker's own feedback where permitted, never a summary of them. Hunt broken logic, scope drift, filler, generic AI-sounding output.
@@ -71,7 +88,7 @@ The workflow runs in eight phases, 0 through 7.
 
 1. Check the final saved artifact, not an earlier state. QA reported on stale output is worse than no QA.
 2. Enumerate, do not spot-check. List every visible string, slide, or screen and read each one semantically. A TODO search misses draft tone.
-3. Look at pixels, not just markup. Render and inspect at every target size for overflow, overlap, clipping, and orphaned text.
+3. Look at pixels, not just markup. Render and inspect at every target size for overflow, overlap, clipping, and orphaned text. For web builds also inspect the shared-link preview and open the page in the target channels' in-app browsers, which behave differently from full browsers.
 4. Run one dedicated pass for mechanical defects: page numbers, repeated headers and footers, cross-references, and links after any renumbering.
 5. Technical QA is not editorial readiness. A build that passes every test can still read like internal notes. These are two separate passes.
 6. If the deliverable is published, verify the live bytes from the public URL against the intended build.
@@ -97,5 +114,8 @@ The workflow runs in eight phases, 0 through 7.
 - Reopening settled decisions with new style questions.
 - Asking about choices the brief already settles, or asking open questions without a recommendation.
 - Citing a process or checklist without actually running it end to end.
+- A mobile layout that is a desktop port with no phone-native logic.
+- Reporting speed or compatibility without measuring it.
+- Icons, labels, or buttons whose meaning does not match what they do.
 
 See reference/checklists.md for the decision-question format, the pre-delivery QC checklist, and the lessons-file template.
