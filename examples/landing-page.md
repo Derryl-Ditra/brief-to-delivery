@@ -20,12 +20,12 @@ This is an authored example, not a recorded runtime result. Capability lines mus
 2. Scope: private responsive HTML demo and local original assets. Settled choices: audience, palette, content sections and primary collection anchor.
 3. Blockers: none for a draft if file creation is available. Missing commercial facts will be omitted. No permission to deploy, collect data or add a checkout.
 4. Capabilities: report file creation, renderer, browser interactions, source access, independent reviewer and timing instrumentation as available or unavailable. Every unavailable check is NOT RUN with its reason.
-5. Next: draft hierarchy and content, then build within the settled direction. Status DRAFT. Identify the saved candidate and required checks before any CHECKED claim.
+5. Next: draft hierarchy and content, then build within the settled direction. Status DRAFT. Identify the saved candidate and required checks before any SELF-CHECKED or CHECKED claim.
 
 ## Observable acceptance checks
 
 1. The supplied brand, audience, palette and action match the brief; no new offer or customer proof appears.
 2. The collection anchor works. There are no forms, outbound commerce links, trackers or network dependencies.
 3. Every visible illustration is original and labeled as concept art. Every asset referenced by HTML exists locally; informative visuals have text alternatives.
-4. At 390, 768 and 1440 CSS pixels, inspect actual renders for readable type, no horizontal overflow and usable navigation. Check keyboard focus and the primary action.
+4. At 320, 390, 768 and 1440 CSS pixels, inspect actual renders for readable type, no horizontal overflow and usable navigation. Check keyboard focus and the primary action.
 5. Record the exact candidate, checks, failures and NOT RUN items using the QC record. Do not turn one passing demo into a compatibility or conversion claim.
