@@ -11,7 +11,7 @@ The workflow runs in eight phases, 0 through 7. It requests checks; it does not 
 
 ## Start: capability and status preflight
 
-Before building, read reference/checklists.md and report:
+Before building, read reference/checklists.md and, for visual builds, reference/design-bar.md. Report:
 
 1. Inputs actually read, skill version or commit, explicit asks, settled decisions and unresolved blockers. A downloaded file is not proof the host activated the skill.
 2. Capabilities available now: source access, file creation, rendering, browser interaction, independent reviewer, performance measurement and permitted release route. State unavailable checks as NOT RUN with a reason. Never simulate an independent reviewer by reviewing your own work.
@@ -45,6 +45,7 @@ Use examples/landing-page.md for a fictional starter brief and expected first re
 5. Label what each figure measures. Two metrics that look alike (for example exposure versus savings) are not interchangeable.
 6. Never state a guarantee or promise that no source backs.
 7. When the plan changes mid-project, reconcile every file that still carries the old version: timelines, figures, terms.
+8. Trial scope contract: record the agreed time budget, static page versus clickable journey, one primary user action and what is excluded. Fast/full presets are optional planning aids, not fixed promises. The actual brief wins. Track elapsed time, passes and completed journeys; at the boundary, report the state and cost of the next step. A time limit never waives a required check or permits release.
 
 ## Phase 2: Decision gate
 
@@ -67,7 +68,7 @@ Use examples/landing-page.md for a fictional starter brief and expected first re
 1. Lead with the decision: the choice, the argument, why it stays within the brief, then the plan.
 2. Thirty-second rule: one clear goal per slide, screen, or section. If it cannot be understood in 30 seconds, cut it down.
 3. Hierarchy first: a visible focal point, summary stats before detail, records as a second layer. No flat wall of equal-weight information.
-4. Wireframe in black and white until the hierarchy works, unless the brief says otherwise. Skip this for a single page whose layout the brief fixes or already supplies, and record N/A with that reason. Color and branding come last, accents stay small on a neutral base.
+4. Wireframe in black and white until the hierarchy works, unless the brief says otherwise. Skip this for a single page whose layout the brief fixes or already supplies, and record N/A with that reason. Choose color and branding after hierarchy, to fit the direction; a neutral base is an option, not a mandatory theme.
 5. Plain language for the real audience. Cut jargon and clever phrasing. Be clear, not smart.
 6. Keep transformations believable: adjacent steps, not leaps the audience will not buy.
 7. Strip internal and draft-sounding copy before delivery. Keep the honesty, drop the process commentary.
@@ -80,7 +81,7 @@ These rules apply when the deliverable is a screen: a landing page, a homepage w
 
 1. Functional over decorative. Every element does a job. A beautiful screen that is hard to use fails, and passing a pixel checklist does not mean the screen passes the decision-maker's taste.
 2. Mobile is its own design, not a shrunken desktop. Navigation, sheets, gestures, and reach zones need phone-native patterns. If the mobile layout is a desktop port, redo it.
-3. One dominant primary action per screen. No flat row of equal-weight buttons; the main action (book, buy, share, directions) is visibly the biggest and stays reachable, for example in a sticky bar.
+3. One dominant primary action per screen. Avoid equal-weight competing buttons. Keep the action reachable without covering content; a sticky bar is not a default requirement. Follow reference/design-bar.md for concept pages and motion.
 4. Icons must match their meaning. A wrong icon is a defect, not a style choice. For third party links, use official marks only when permitted and verified. Every link and icon control needs a meaningful accessible name. Use visible text when an icon is ambiguous; never remove a label just for appearance.
 5. Reuse the product's existing elements. Do not invent a second visual language for a share card, a preview, or a new page inside the same product.
 6. Test representative content: the longest expected name, minimum and maximum item counts, applicable loading, empty, denied and error states, and tap targets large enough for phone use. For fictional demos, label invented content and generated assets; never present them as real customer proof or product photography.
@@ -90,6 +91,8 @@ These rules apply when the deliverable is a screen: a landing page, a homepage w
 10. Generated assets: use one shared style description for every generated image so the set looks like one brand, and keep the prompts with the project. Label generated images as such unless real photography is supplied. Do not depict a real person or copy a real brand. Give each informative image alt text, and compress images to web size before delivery.
 11. When the decision-maker rejects a visual direction, extract the rule from the rejection and record it, so the next round starts from the learned constraint instead of repeating the guess.
 12. Multi-page builds share one design system. A homepage plus several landing pages for ads or different traffic reuse the same header, footer, components, and styles; only the message changes per audience. Inspect every page, not just the homepage. Give each page its own share preview only when sharing is authorized and part of scope; record N/A for a private local demo with no sharing.
+
+Read and apply reference/design-bar.md before layout: inspect references, record a product-specific idea, build purposeful detail, then score the exact rendered candidate. Its trial taste rubric is separate from functional QA. Report blocked references and self-check versus independent review honestly.
 
 ## Phase 5: Independent critique
 
@@ -109,6 +112,9 @@ These rules apply when the deliverable is a screen: a landing page, a homepage w
 8. Narrow changes stay narrow. Make only the authorized change and re-verify its blast radius. No incidental improvements mid-review.
 9. Report exactly what was inspected and what was not.
 10. If a check cannot be run (no independent reviewer, no renderer, no source or live access), mark it NOT RUN with the reason. A readiness claim covers only the checks that actually ran.
+
+11. Trial functional proof lane: if a clickable prototype is promised, test the named primary journey through its visible success and applicable error response, keyboard access and narrow-screen behavior. A static button is not an interactive demo. Record unrun checks and preserve the status ceiling.
+12. Check every requested file, including a short brand note when asked. Keep that note to audience, concept, type/color rationale and primary action. A visual score cannot waive a missing deliverable.
 
 ## Phase 7: Deliver, clean up, capture lessons
 
