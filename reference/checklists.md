@@ -30,7 +30,9 @@ Run on the final saved artifact, in this order. Record what was inspected.
 7. Content-rules pass: the deliverable leads with the decision (the choice, the argument, why it fits the brief, then the plan); it does not recap the brief to its author; each slide, screen, or section has one clear goal.
 8. Voice pass: anything written as the decision-maker's view, doubt, or position matches their recorded words.
 9. Scope pass: nothing in the deliverable that was not asked for; every explicit ask in the brief is covered. Check every obligation, exclusion, timing anchor and approval-status word against its source or recorded approval. A labeled assumption is not an approved term.
-10. Report: state exactly what was inspected and what was not.
+10. Design evidence: for visual builds, apply reference/design-bar.md and record the idea, inspected reference URLs or blocked loads, supplied teardowns, per-criterion scores and first-screen/full-page renders. Separate self-check from independent review. Check contrast, collisions, density and full-page pacing, not only overflow.
+11. Functional proof: when a clickable journey is required, record the actual primary journey, success/applicable error response, keyboard and narrow-screen results. Static controls are not proof. Check every requested file, including a brand note if the brief asks for one.
+12. Report: state exactly what was inspected and what was not.
 
 ## Scope boundary example
 
@@ -41,7 +43,9 @@ Source: four drafts in two weeks, one revision per draft. Supported: four drafts
 Fill this before claiming SELF-CHECKED or CHECKED. A blank template is not evidence.
 
 ```text
-Brief and approved decisions:
+Brief and approved decisions (same original brief supplied to reviewers):
+Agreed time budget, exclusions, static/clickable scope and primary action:
+Actual elapsed time, build passes and completed journeys:
 Skill version or commit:
 Saved candidate checksum or revision:
 Status: DRAFT / SELF-CHECKED / CHECKED / RELEASED
@@ -50,7 +54,11 @@ Requirement | Observable pass condition | Actual evidence | PASS / FAIL / NOT RU
 Target sizes, interactions and applicable states inspected:
 Timing: FCP, defined readiness milestone, browser, viewport, cache,
 network and CPU settings, samples and range; or NOT RUN with reason:
-Independent reviewer, findings, fixes and corrected candidate recheck:
+Functional journey, success/applicable error response, keyboard and narrow-screen result:
+Design idea, inspected references, blocked loads and supplied teardown sources:
+Self-score with candidate-matched first-screen/full-page phone and desktop renders:
+Independent reviewer identity/count, rubric, findings, fixes and corrected candidate recheck:
+Requested deliverables, including brief-requested brand note, present:
 Open failures and limits:
 Release authority, destination and audience:
 Delivered version inspection, if authorized and released:
