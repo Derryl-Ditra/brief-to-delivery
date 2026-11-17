@@ -16,7 +16,7 @@ Settled: fictional brand, palette, audience, single page, local assets, private 
 
 This is an authored example, not a recorded runtime result. Capability lines must reflect the actual environment.
 
-1. Read: this brief, SKILL.md and reference/checklists.md, with the actual skill commit or version recorded.
+1. Read: this brief, SKILL.md, reference/checklists.md and reference/design-bar.md, with the actual skill commit or version recorded.
 2. Scope: private responsive HTML demo and local original assets. Settled choices: audience, palette, content sections and primary collection anchor.
 3. Blockers: none for a draft if file creation is available. Missing commercial facts will be omitted. No permission to deploy, collect data or add a checkout.
 4. Capabilities: report file creation, renderer, browser interactions, source access, independent reviewer and timing instrumentation as available or unavailable. Every unavailable check is NOT RUN with its reason.
@@ -29,3 +29,4 @@ This is an authored example, not a recorded runtime result. Capability lines mus
 3. Every visible illustration is original and labeled as concept art. Every asset referenced by HTML exists locally; informative visuals have text alternatives.
 4. At 320, 390, 768 and 1440 CSS pixels, inspect actual renders for readable type, no horizontal overflow and usable navigation. Check keyboard focus and the primary action.
 5. Record the exact candidate, checks, failures and NOT RUN items using the QC record. Do not turn one passing demo into a compatibility or conversion claim.
+6. Record a visual idea within the settled palette, inspected references or blocked reference loads, and self-score versus independent review separately. Use the design-bar rubric without inventing evidence. The primary anchor remains the agreed interaction; do not expand it into a form, checkout or application to satisfy a rubric.

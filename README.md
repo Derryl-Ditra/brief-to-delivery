@@ -8,7 +8,7 @@ This is an instruction package, not a runnable website template. It bundles no a
 
 Human review is required before external release. This package does not guarantee source fidelity, legal suitability, conversion gains or reliable model behavior.
 
-Historical reports describe two single run proposal scenarios with mixed results. They do not prove the current landing page workflow works. See [trial records](reference/trials.md) for the limits and dated compatibility table. A model saying it checked something is not proof.
+Historical reports describe two single run proposal scenarios with mixed results. They do not prove the current landing page workflow works. The trial design bar adds reference study, a brief-specific visual idea, a rendered taste rubric and separate functional proof. It has not established conversion gains or general design superiority. See [trial records](reference/trials.md) for the limits and dated compatibility table. A model saying it checked something is not proof.
 
 ## Quickstart
 
@@ -50,6 +50,7 @@ For your own project, replace the fictional brief with your original source mate
 2. [reference/checklists.md](reference/checklists.md): decisions, QC record and lessons template.
 3. [examples/landing-page.md](examples/landing-page.md): fictional brief and example first response.
 4. [reference/trials.md](reference/trials.md): repeatable cases and dated evidence limits.
+5. [reference/design-bar.md](reference/design-bar.md): direction, motion, rendered rubric and optional upstream design references. References are not bundled or installed dependencies.
 
 ## Status language
 
