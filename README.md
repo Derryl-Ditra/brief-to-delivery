@@ -72,4 +72,3 @@ The description is kept below 200 characters to fit both published limits. That 
 The scope workflow began as the v2 package dated 3 November 2026. A visual workflow was added in November 2026. This revision adds setup guidance, a fictional starter, capability reporting and narrower wording. It includes no raw private briefs, conversations or account material.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for safe examples and the contribution process. Maintainer review is required before merge. Licensed under [MIT](LICENSE), without warranty.
-
