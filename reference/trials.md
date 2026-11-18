@@ -28,7 +28,7 @@ Until 18 November 2026 this file carried four repeatable cases (A, B, C and D) w
 
 ## Trial scope and functional proof
 
-The scope contract and collision fixture are trial additions, not measured improvements. Optional fast/full labels must use the client's agreed budget, never a universal time target. On the next authorized build, record elapsed time, retries, completed journeys and independent rendered review. A static concept does not establish that a clickable journey fits that budget. This package does not schedule that test or authorize a release.
+The scope contract and the collision fixture (kept private with the repeatable cases) are trial additions, not measured improvements. Optional fast/full labels must use the client's agreed budget, never a universal time target. On the next authorized build, record elapsed time, retries, completed journeys and independent rendered review. A static concept does not establish that a clickable journey fits that budget. This package does not schedule that test or authorize a release.
 
 ## Record each actual run
 
