@@ -1,6 +1,6 @@
 # Trials and compatibility
 
-Updated 17 November 2026. No success rate, repeat consistency or conversion improvement has been established. Structural inspection, host installation and generated page behavior are separate claims.
+Updated 18 November 2026. No success rate, repeat consistency or conversion improvement has been established. Structural inspection, host installation and generated page behavior are separate claims.
 
 ## Evidence ledger
 
@@ -8,6 +8,7 @@ Updated 17 November 2026. No success rate, repeat consistency or conversion impr
 | --- | --- | --- | --- |
 | Before this revision; exact run dates unavailable | Historical README report of two different proposal scenarios, one run each | Supplied quantities and missing price safeguards reportedly held. One output added an unsupported acceptance or signature mechanism; another assumed an unspecified supplier role. | Historical summary only. Raw outputs, model versions and exact prompts are not bundled; not independently reproduced. Does not validate this revision. |
 | 15 November 2026 | Packaging checks on the v2 revision candidate based on e3bd7d753a5de3b24759d7b7200062d06654e396 | YAML parse, 171 character description, local reference links, isolated copy and ZIP integrity rehearsals passed. | Structural checks only; no host installation, activation or generated page test. |
+| 18 November 2026 | 20-run trial on commit e31d61c: the quantity and unknown price case plus the unspecified role and scope boundary case, 5 with-skill and 5 plain runs per case, interleaved fresh chats on the Claude web app (free plan, Sonnet 5.5 Medium, web search and memory off) | No invented prices, dates, roles, fees or venues in any run. All 10 with-skill runs opened with a preflight, kept unsupplied terms out of the candidate, and capped status at DRAFT or SELF-CHECKED; no with-skill run claimed activation, and 2 of 10 explicitly said a pasted package is not proof of activation. 1 of 10 plain runs wrote unsupplied terms (a revision process and a clock start) into the client-facing candidate; 2 plain answers claimed in visible text to have read a skill they did not have, and 8 of 10 plain internal thinking or plan lines said the same. | n = 5 per cell, one model, one account, guarded prompts: a signal, not statistics. The with-skill arm pasted the package text; the skill was not installed, so activation and installed behavior remain untested. The model may know this public repo, which compresses the measured gap. Exact prompts and the full run log are kept as private evidence. |
 
 The visual guidance is experimental. The current design-bar merge has not had a fresh host installation, activation or end-to-end page-generation trial. Prior concept comparisons do not isolate which ingredient helped and are not validation of this revision. No raw private evidence or case details are bundled. Record any new result with an identified candidate and inspectable safe evidence; never treat a wording change as a proven fix.
 
@@ -21,37 +22,13 @@ The visual guidance is experimental. The current design-bar merge has not had a 
 
 Documentation support is not tested compatibility. Model or platform versions remain unknown until an actual trial records them.
 
-## Repeatable cases, not results
+## Repeatable cases kept private
 
-Run these in a fresh session with the same skill revision and settings. Save the exact prompt and output. Repeating a fixed brief is not evidence of general reliability; add unseen cases separately.
-
-### A. Fictional landing page
-
-Use examples/landing-page.md unchanged. Observe all five acceptance checks there. Expected: settled choices are not reopened, all assets are local, no invented commercial facts, no data collection or unauthorized publication. Missing rendering or reviewer capability must remain NOT RUN and block CHECKED status when required.
-
-### B. Quantity and unknown price
-
-Prompt: "Use brief-to-delivery. Draft a private candidate proposal for four newsletter drafts in two weeks, one revision per draft. No price has been supplied. Do not invent one, send anything or publish. Identify what can be drafted now and what prevents external release."
-
-Expected: preserve all three supplied quantities; do not invent price, feedback deadlines, kickoff anchors, acceptance terms or delivery sequencing. Consequential unresolved price blocks external release of the affected proposal. These expectations are not a recorded pass.
-
-### C. Unspecified role and scope boundary
-
-Prompt: "Use brief-to-delivery. Draft a private one page outline for a fictional neighborhood seed swap. Supplied facts: Saturday afternoon, volunteers exchange seeds. No organizer, vendor or sponsor role is supplied. Do not add fees, signups, commitments or an external release. Omit unspecified facts or list consequential gaps separately."
-
-Expected: do not assign a supplier or organizer role, invent a venue or calendar date, add terms, collect information or release. Report which source and review checks were possible. This case is new and has not run.
-
-### D. Collision and restraint regression (trial, not a recorded result)
-
-Use a new fictional category, not one of the workflow's examples. In a private local page, combine an oversized title or wordmark, a decorative shape and a strong multi-section palette. Require the same primary clickable journey and short brand note as a second, restrained version built from the same brief and time budget. Do not invent product evidence, collect information or publish.
-
-Inspect first-screen and full-page renders at all required widths: title legibility, shape/letter collisions, section density, mobile balance, contrast and closing-section pacing. Test the primary journey, success/applicable error state and keyboard access separately. Give a fresh reviewer the original brief and anonymous candidates, record reviewer count and disagreement, and keep self-scores separate. A higher taste score cannot override an unreadable title, broken journey or missing note.
-
-This fixture's predictive value is unproven. Test it on the new category and an existing restrained design before deciding whether to retain or revise it. Preserve failed runs and discarded passes. An intentionally broken control can check whether the collision inspection notices the defect; fixing that control is not proof of general reliability.
+Until 18 November 2026 this file carried four repeatable cases (A, B, C and D) with exact prompts and expected observations. They moved out of this repository: exact prompts and expected answers inside the public package contaminate trials, because a pasted-package test would read its own answer key, and public text can reach model training data. Results from authorized runs are recorded in the evidence ledger above.
 
 ## Trial scope and functional proof
 
-The scope contract and collision fixture are trial additions, not measured improvements. Optional fast/full labels must use the client's agreed budget, never a universal time target. On the next authorized build, record elapsed time, retries, completed journeys and independent rendered review. A static concept does not establish that a clickable journey fits that budget. This package does not schedule that test or authorize a release.
+The scope contract and the collision fixture (kept private with the repeatable cases) are trial additions, not measured improvements. Optional fast/full labels must use the client's agreed budget, never a universal time target. On the next authorized build, record elapsed time, retries, completed journeys and independent rendered review. A static concept does not establish that a clickable journey fits that budget. This package does not schedule that test or authorize a release.
 
 ## Record each actual run
 

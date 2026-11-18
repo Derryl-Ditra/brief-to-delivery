@@ -49,7 +49,7 @@ For your own project, replace the fictional brief with your original source mate
 1. [SKILL.md](SKILL.md): preflight and phases 0 through 7.
 2. [reference/checklists.md](reference/checklists.md): decisions, QC record and lessons template.
 3. [examples/landing-page.md](examples/landing-page.md): fictional brief and example first response.
-4. [reference/trials.md](reference/trials.md): repeatable cases and dated evidence limits.
+4. [reference/trials.md](reference/trials.md): dated evidence limits and results. Repeatable cases are kept private so trials stay uncontaminated.
 5. [reference/design-bar.md](reference/design-bar.md): direction, motion, rendered rubric and optional upstream design references. References are not bundled or installed dependencies.
 
 ## Status language

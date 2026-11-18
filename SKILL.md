@@ -18,7 +18,7 @@ Before building, read reference/checklists.md and, for visual builds, reference/
 3. Scope and release boundary. Missing tools do not authorize a different audience, service, paid dependency or deployment. Continue unblocked draft work; hold affected claims or release.
 4. Candidate status: DRAFT until required checks pass; SELF-CHECKED when every required check that the builder can run has passed but no independent reviewer was available (independent review NOT RUN; this is the honest ceiling without a reviewer); CHECKED only for an identified saved candidate with listed evidence, an independent reviewer's findings and no required checks missing; RELEASED only after authorized delivery and inspection of the actual delivered version. SELF-CHECKED and CHECKED are not permission to release. A changed candidate reopens affected checks; release status alone never certifies quality.
 
-Use examples/landing-page.md for a fictional starter brief and expected first response. Use reference/trials.md for repeatable cases, evidence limits and dated compatibility records.
+Use examples/landing-page.md for a fictional starter brief and expected first response. Use reference/trials.md for evidence limits and dated compatibility records.
 
 ## When to use
 
@@ -137,4 +137,4 @@ Read and apply reference/design-bar.md before layout: inspect references, record
 - Reporting speed or compatibility without measuring it.
 - Icons, labels, or buttons whose meaning does not match what they do.
 
-See reference/checklists.md for decision questions, the QC record and lessons template. See reference/trials.md for test cases and evidence limits. No wording change alone proves these failure modes are fixed.
+See reference/checklists.md for decision questions, the QC record and lessons template. See reference/trials.md for evidence limits. No wording change alone proves these failure modes are fixed.
