@@ -138,4 +138,3 @@ Read and apply reference/design-bar.md before layout: inspect references, record
 - Icons, labels, or buttons whose meaning does not match what they do.
 
 See reference/checklists.md for decision questions, the QC record and lessons template. See reference/trials.md for evidence limits. No wording change alone proves these failure modes are fixed.
-
