@@ -14,13 +14,11 @@ Settled: fictional brand, palette, audience, single page, local assets, private 
 
 ## Example first response
 
-This is an authored example, not a recorded runtime result. Capability lines must reflect the actual environment.
+This is an authored example, not a recorded runtime result. Keep the first response this short; the evidence belongs in the QC record (reference/checklists.md), not in chat.
 
-1. Read: this brief, SKILL.md, reference/checklists.md and reference/design-bar.md, with the actual skill commit or version recorded.
-2. Scope: private responsive HTML demo and local original assets. Settled choices: audience, palette, content sections and primary collection anchor.
-3. Blockers: none for a draft if file creation is available. Missing commercial facts will be omitted. No permission to deploy, collect data or add a checkout.
-4. Capabilities: report file creation, renderer, browser interactions, source access, independent reviewer and timing instrumentation as available or unavailable. Every unavailable check is NOT RUN with its reason.
-5. Next: draft hierarchy and content, then build within the settled direction. Status DRAFT. Identify the saved candidate and required checks before any SELF-CHECKED or CHECKED claim.
+> Status: DRAFT. Mosslight Paper single-page demo, scope confirmed: fictional brand, settled palette and audience, one collection anchor, local assets only, no commerce or deployment. Open and missing: none blocking the draft; unsupplied commercial facts stay omitted. Checks I cannot run are NOT RUN in the QC record and surface here only if one limits a claim. Building hierarchy and content first.
+>
+> Next step: none needed from you; the brief settles the scope. One idea within it: pair each collection sample with a one-line care note, since gift buyers ask about durability. Say the word and I will include it.
 
 ## Observable acceptance checks
 
