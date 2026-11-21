@@ -40,6 +40,21 @@ For a claim that one method beats another, give a fresh reviewer anonymous candi
 
 If publication is authorized, open the delivered URL and inspect the actual hosted first screen and full page at phone and desktop widths before reporting delivery. Local screenshots are not hosted-page evidence. For a multi-concept review, prefer one navigable review artifact and one link when the requested format permits; that does not authorize hosting or changing its audience.
 
+## Functional screen rules
+
+Apply to every screen build (landing page, page family, dashboard, map, small tool), with the design bar above. Distilled from project feedback and proposed safeguards; that provenance is not evidence the rules prevent defects in every build.
+
+1. Functional over decorative: every element does a job; a beautiful screen that is hard to use fails, and a pixel-checklist pass is not the decision-maker's taste bar.
+2. Mobile is its own design, not a shrunken desktop: phone-native navigation, sheets, gestures and reach zones; a desktop port gets redone.
+3. One dominant primary action per screen; avoid equal-weight competing buttons. Keep it reachable without covering content; a sticky bar is not a default (see the sticky-action rule above).
+4. Icons match their meaning; a wrong icon is a defect, not a style choice. Official third-party marks only when permitted and verified; every icon control has a meaningful accessible name; never remove a label just for appearance.
+5. Reuse the product's existing elements; never invent a second visual language inside one product. Multi-page builds share one design system; only the message changes per audience. Inspect every page, not just the homepage.
+6. Test representative content: longest expected name, minimum and maximum item counts, applicable loading, empty, denied and error states, phone-sized tap targets. Keep the same essential information, actions and outcomes across breakpoints unless the brief says otherwise; record omissions and their approved reason. Label invented demo content and generated assets; never as real customer proof or product photography.
+7. Speed is part of the deliverable: define the readiness milestone (for example hero visible plus primary control usable) before measuring; report FCP and the milestone with the test conditions the QC record lists. Label local or private-demo numbers "local, unthrottled, not device evidence"; no instrumentation means timing NOT RUN. Never claim "fast" without measurement or present simulation as device evidence.
+8. Share previews only on authorized surfaces: inspect the link preview card and share text on each configured channel, including in app browsers, with fallbacks such as copy link. Record N/A with the scope reason for a private local demo; never publish just to run this check. Per-page previews only when sharing is authorized and in scope.
+9. Generated assets: one shared style description per set, prompts kept with the project, images labeled as generated unless real photography is supplied, no real people or copied brands, alt text on informative images, compressed to web size.
+10. A rejected visual direction becomes a recorded rule, so the next round starts from the learned constraint instead of repeating the guess.
+
 ## Optional design references
 
 These are upstream references, not bundled dependencies or installed skills. Choose a lead method that fits the task, read its current instructions and required references, and record the version and steps actually applied. Check license and installation effects before copying or installing anything. Do not blend conflicting directions or claim a method ran because it was listed.
@@ -50,3 +65,4 @@ These are upstream references, not bundled dependencies or installed skills. Cho
 - [Hallmark](https://github.com/Nutlope/hallmark): alternative composition and interaction references.
 
 No upstream scripts or source text are redistributed here. The workflow can be used without installing these references; unavailable checks and partial use must stay visible.
+
