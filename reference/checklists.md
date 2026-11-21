@@ -78,3 +78,4 @@ Written [date]. Each item is a mistake made in this project and the rule that pr
 ```
 
 Group by category (claims about the decision-maker, scope and numbers, quality checks, process, writing and files). Keep each item to one mistake and one rule.
+
