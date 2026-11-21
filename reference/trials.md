@@ -45,3 +45,4 @@ Failures, fixes and remaining limits:
 ```
 
 Keep private evidence out of this repository. Publish only fictional or authorized anonymized summaries without personal details, credentials or raw private conversations. Label a reported result as reported until directly verified. Never replace a failure with a promise that revised wording solved it.
+
