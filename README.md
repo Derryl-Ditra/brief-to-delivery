@@ -34,7 +34,7 @@ Confirm the skill is listed in the host's skills or customization view. In a new
 
 ### Claude web app
 
-Follow the [official custom skill guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) to upload a ZIP containing the skill folder and enable it. Skills are available on all plans, including Free, with code execution and file creation enabled in Settings. The folder must contain `SKILL.md`, `reference/` and `examples/`; confirm the uploaded skill appears before using it. Actual upload and activation have not been verified here.
+Download [`brief-to-delivery.skill`](brief-to-delivery.skill) and upload it in Claude under Customize > Skills; the upload dialog accepts `.skill` files directly. Skills are available on all plans, including Free, with code execution and file creation enabled in Settings. The package contains `SKILL.md`, `reference/`, `examples/` and `LICENSE`; confirm the uploaded skill appears before using it. Upload and activation were verified on a Free account in November 2026. See the [official custom skill guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills) for details.
 
 ### First request
 
