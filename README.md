@@ -40,7 +40,7 @@ Follow the [official custom skill guide](https://support.claude.com/en/articles/
 
 Use the complete [fictional landing page brief](examples/landing-page.md). It includes an example first response, not a claimed model output.
 
-> Use brief-to-delivery. Read examples/landing-page.md and reference/checklists.md. Build the private fictional demo described in the brief. First report inputs read, scope, settled choices, blockers, available capabilities and checks you cannot run. No external publishing, messages, payments or data collection. Do not claim installed, tested or ready from reading files alone.
+> Use brief-to-delivery. Read examples/landing-page.md and reference/checklists.md. Build the private fictional demo described in the brief. Keep the first reply short: scope confirmation, blockers, and checks you cannot run as NOT RUN. Evidence goes in the QC record, not the reply. No external publishing, messages, payments or data collection. Do not claim installed, tested or ready from reading files alone.
 
 For your own project, replace the fictional brief with your original source material and constraints. Review consequential missing facts before build or release. `TBD` is not approval to publish.
 
